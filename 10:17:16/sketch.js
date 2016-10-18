@@ -14,12 +14,20 @@ function draw() {
 }
 
 function keyTyped() {
-  if (key === 'b') {
-    strokeColor = 'blue';
-  } else if (key === 'p') {
+  if (key === '1') {
+    strokeColor = '#3C0CE8';
+    weight = 10
+  } else if (key === '2') {
     strokeColor = '#E32173';
-  } else if (key === 'l') {
-    strokeColor = 'white';
+    weight = 10
+  } else if (key === '3') {
+    strokeColor = '#F2F5EF';
+    weight = 10
+  } else if (key == "4") {
+    strokeColor = "#00FFEC";
+    weight = 10
+  } else if (key == '5') {
+    strokeColor = "White";
     weight = 50
   }
 }
