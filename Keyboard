@@ -1,0 +1,10 @@
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+function draw() { 
+  background("white");
+  text("X" + " = " + mouseX + " | " + "Y" + " = " + mouseY, 10,10);
+  rect(65,150,270,100);
+  line(100,148,100,60);
+}
