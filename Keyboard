@@ -13,64 +13,70 @@ function preload() {
     f = loadSound("f.mp3");
     g = loadSound("g.mp3");
     a = loadSound("a.mp3");
-    b = loadSound("b.mp3");
+    b = loadSound("b.mp3")
+
 } 
 
 
 function setup() { 
     createCanvas(windowWidth, windowHeight);
+
 }
+
 
 function draw() { 
     background("white"); 
-    text("X" + " = " + mouseX + " | " + "Y" + " = " + mouseY, 10, 10); 
-    rect(65, 150, 270, 100); 
-    line(100, 150, 100, 250);
-    line(135,150,135,250);
-    line(170,150,170,250);
-    line(205,150,205,250);
-    line(240,150,240,250);
-    line(275,150,275,250);
-    line(305,150,305,250);
 
-    if (mouseX < 100 && mouseX > 60) {
-        if (mouseIsPressed) {
-            c.play();
-        }
+     text("X" + " = " + mouseX + " | " + "Y" + " = " + mouseY, 10, 10); 
+    rect(65, 150, 270, 100); 
+    for (var i = 100; i <= 320; i += 40) {
+        line(i, 150, i, 250);
     }
-    if (mouseX >= 101 && mouseX <= 135) {
-        if (mouseIsPressed) {
-            d.play();
-        }
-    }
-    if(mouseX >= 136 && mouseX <= 170) {
-      if (mouseIsPressed) {
-          e.play();
-        }
-    }
-    if(mouseX >= 171 && mouseX <= 205){
-      if (mouseIsPressed) {
-          f.play();
-        }
-    }
-    if(mouseX >= 206 && mouseX <= 240){
-      if (mouseIsPressed) {
-          g.play();
-        }
-    }
-    if(mouseX >= 241 && mouseX <= 275){
-      if(mouseIsPressed) {
-          a.play();
-        }
-    }
-    if(mouseX >= 276 && mouseX <= 305){
-      if(mouseIsPressed) {
-          b.play();
-        }
-    }
-    if(mouseX >= 306 && mouseX <= 340){
-      if(mouseIsPressed) {
-          c.play();
+     line(100, 150, 100, 250);
+     line(140,150, 140, 250);
+
+
+      if (mouseX >= 66 && mouseX <= 102) {
+          if (mouseIsPressed) {
+              fill("red");
+              c.play();
+          }
       }
-    }
+      if (mouseX >= 103 && mouseX <= 142) {
+          if (mouseIsPressed) {
+              fill("blue");
+              d.play();
+
+          }
+      }
+      if (mouseX >= 143 && mouseX <= 182) {
+          if (mouseIsPressed) {
+              fill("purple")
+              e.play();
+          }
+      }
+      if (mouseX >= 183 && mouseX <= 222) {
+          if (mouseIsPressed) {
+              fill("green")
+              f.play();
+          }
+      }
+      if (mouseX >= 223 && mouseX <= 262) {
+          if (mouseIsPressed) {
+              fill("yellow")
+              g.play();
+          }
+      }
+      if (mouseX >= 263 && mouseX <= 302) {
+          if (mouseIsPressed) {
+              fill("orange")
+              a.play();
+          }
+      }
+      if (mouseX >= 303 && mouseX <= 336) {
+          if (mouseIsPressed) {
+              fill("pink");
+              b.play();
+          }
+      }
 }
